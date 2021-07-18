@@ -1,13 +1,12 @@
 import "./app.scss";
 
-import "@fontsource/roboto";
-
-import Navbar from "./components//navbar/Navbar";
+import { useState } from "react";
+import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
-import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import Works from "./components/works/Works";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,8 +17,9 @@ export default function App() {
       <div className="sections">
         <Header />
         <Projects />
-        <Footer />
+        <Works />
       </div>
+      <Footer />
     </main>
   );
 }

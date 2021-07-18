@@ -1,15 +1,16 @@
 import "./menu.scss";
+import Menuli from "../menuli/Menuli";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li onClick={() => setMenuOpen(!menuOpen)}>
-          <a href="#intro">Home</a>
+          <a href="#header">Home</a>
         </li>
-        <li onClick={() => setMenuOpen(!menuOpen)}>
-          <a href="#portfolio">Portfolio</a>
-        </li>
+        <Menuli menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
+          <a href="#projects">Projects</a>
+        </Menuli>
         <li onClick={() => setMenuOpen(!menuOpen)}>
           <a href="#contact">Contact</a>
         </li>

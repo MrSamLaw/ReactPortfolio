@@ -13,9 +13,6 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
             <EmailIcon className="icon" />
             <span>code@mrsamlaw.com</span>
           </div>
-          <div className="itemContainer">Portfolio</div>
-          <div className="itemContainer">Contact</div>
-          <div className="itemContainer">Resume</div>
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
