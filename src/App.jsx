@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import Works from "./components/works/Works";
+import Contact from "./components/contact/Contact";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function App() {
       <div className="sections">
         <Header />
         <Projects />
-        <Works />
+        <Contact />
       </div>
       <Footer />
     </main>
