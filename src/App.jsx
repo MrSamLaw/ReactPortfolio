@@ -1,7 +1,11 @@
 import "./app.scss";
 
 import { useState } from "react";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation/Navigation";
+import About from "./components/About/About";
+import Home from "./components/Home/Home";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contacts";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -14,7 +18,7 @@ export default function App() {
       return <About />;
     }
     if (currentPage === "Blog") {
-      return <Blog />;
+      return <Portfolio />;
     }
     return <Contact />;
   };
