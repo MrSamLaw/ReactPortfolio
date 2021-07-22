@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contacts";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -17,7 +18,7 @@ export default function App() {
     if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === "Blog") {
+    if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
     return <Contact />;
@@ -31,13 +32,8 @@ export default function App() {
         currentPage={currentPage}
         handlePageChange={handlePageChange}
       />
-      <div className="sections">
-        {renderSection()}
-        {/* <Header />
-        <Projects />
-        <Contact /> */}
-      </div>
-      {/* <Footer /> */}
+      <div className="sections">{renderSection()}</div>
+      <Footer />
     </main>
   );
 }
