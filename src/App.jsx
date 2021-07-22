@@ -7,12 +7,16 @@ import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
 import Contact from "./components/contact/Contact";
+import NewNav from "./components/newNav/NewNav";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState("Home");
+
+  const handlePageChange = (page) => setCurrentPage(page);
   return (
     <main className="app">
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <NewNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Header />
