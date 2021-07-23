@@ -22,9 +22,9 @@ export default function App() {
     if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    // if (currentPage === "Resume") {
-    //   return <Resume />;
-    // }
+    if (currentPage === "Resume") {
+      return <Resume />;
+    }
     return <ContactFormik />;
   };
 

@@ -1,4 +1,5 @@
 import PageTitle from "../PageTitle/PageTitle";
+
 import "./about.scss";
 
 export default function About() {
