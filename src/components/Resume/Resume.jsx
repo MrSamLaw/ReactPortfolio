@@ -1,12 +1,12 @@
-import React from "react";
-import { Document, Page } from "react-pdf";
+// import React from "react";
+// // import { Document, Page } from "react-pdf";
 
-import samplePDF from "./resume.pdf";
+// import samplePDF from "./resume.pdf";
 
-export default function Resume() {
-  return (
-    <Document file={samplePDF}>
-      <Page pageNumber={1} />
-    </Document>
-  );
-}
+// export default function Resume() {
+//   return (
+//     // <Document file={samplePDF}>
+//     //   <Page pageNumber={1} />
+//     // </Document>
+//   )
+// }

@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Resume from "./components/Resume/Resume";
-import Contact from "./components/Contact/Contacts";
+import ContactFormik from "./components/Contact/ContactFormik";
 import Footer from "./components/Footer/Footer";
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
     // if (currentPage === "Resume") {
     //   return <Resume />;
     // }
-    return <Contact />;
+    return <ContactFormik />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
