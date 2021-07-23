@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ReactPortfolio/static/css/main.55e8fad8.chunk.css",
+    "main.js": "/ReactPortfolio/static/js/main.9c6c8e52.chunk.js",
+    "main.js.map": "/ReactPortfolio/static/js/main.9c6c8e52.chunk.js.map",
+    "runtime-main.js": "/ReactPortfolio/static/js/runtime-main.37efb7bb.js",
+    "runtime-main.js.map": "/ReactPortfolio/static/js/runtime-main.37efb7bb.js.map",
+    "static/js/2.c0e3f2a3.chunk.js": "/ReactPortfolio/static/js/2.c0e3f2a3.chunk.js",
+    "static/js/2.c0e3f2a3.chunk.js.map": "/ReactPortfolio/static/js/2.c0e3f2a3.chunk.js.map",
+    "index.html": "/ReactPortfolio/index.html",
+    "static/css/main.55e8fad8.chunk.css.map": "/ReactPortfolio/static/css/main.55e8fad8.chunk.css.map",
+    "static/js/2.c0e3f2a3.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.c0e3f2a3.chunk.js.LICENSE.txt",
+    "static/media/ANZ-Travel-Bubble-Landing.46081245.png": "/ReactPortfolio/static/media/ANZ-Travel-Bubble-Landing.46081245.png",
+    "static/media/AutoMate.df065d69.png": "/ReactPortfolio/static/media/AutoMate.df065d69.png",
+    "static/media/DayPlanner.cc676784.png": "/ReactPortfolio/static/media/DayPlanner.cc676784.png",
+    "static/media/Note-Taker.26ad0370.png": "/ReactPortfolio/static/media/Note-Taker.26ad0370.png",
+    "static/media/PWGen.8490df81.png": "/ReactPortfolio/static/media/PWGen.8490df81.png",
+    "static/media/Tech-Blog.a40fa97b.png": "/ReactPortfolio/static/media/Tech-Blog.a40fa97b.png",
+    "static/media/WeatherDashboard.23d52ee3.png": "/ReactPortfolio/static/media/WeatherDashboard.23d52ee3.png",
+    "static/media/eCommerce.82edd46c.png": "/ReactPortfolio/static/media/eCommerce.82edd46c.png",
+    "static/media/resume.d6012221.pdf": "/ReactPortfolio/static/media/resume.d6012221.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37efb7bb.js",
+    "static/js/2.c0e3f2a3.chunk.js",
+    "static/css/main.55e8fad8.chunk.css",
+    "static/js/main.9c6c8e52.chunk.js"
+  ]
+}
