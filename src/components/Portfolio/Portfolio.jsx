@@ -13,7 +13,8 @@ export default function Portfolio() {
             img={item.screenshot}
             title={item.title}
             desc={item.description}
-            tech={item.tech}
+            github={item.repo}
+            deployed={item.URL}
             key={item.key}
           />
         ))}

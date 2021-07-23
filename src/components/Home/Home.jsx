@@ -26,7 +26,19 @@ export default function Home() {
 
       <section className="portfolio">
         <PageTitle heading="Work" />
-        <Project />
+        {projectData
+          .filter((item) => item.featured)
+          .map((item) => (
+            <Project
+              img={item.screenshot}
+              title={item.title}
+              desc={item.description}
+              github={item.repo}
+              deployed={item.URL}
+              fText={item.featuredText}
+              key={item.key}
+            />
+          ))}
         <Button buttonText="More of my work" />
       </section>
     </div>

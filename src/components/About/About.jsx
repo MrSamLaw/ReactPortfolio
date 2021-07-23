@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="about">
       <PageTitle heading="About Me" />
-      <h3>Brand Statement</h3>
+
       <p>
         Full-Stack developer who embraces the line between the creative and the
         technical. Earned a Full Stack Web Development Certificate from the
@@ -19,13 +19,21 @@ export default function About() {
         and implementation.
       </p>
 
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Node.JS</li>
-      </ul>
+      <div className="skills">
+        <h2>Skills & Experience</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Node.JS</li>
+          <li>Express</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>jQuery</li>
+          <li>React</li>
+          <li>Git</li>
+        </ul>
+      </div>
     </div>
   );
 }

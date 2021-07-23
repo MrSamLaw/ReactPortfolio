@@ -12,7 +12,6 @@ export default function Project(props) {
         <div className="info">
           <div className="cardHeader">
             <h3>{props.title}</h3>
-            {/* <h4>{props.tech}</h4> */}
           </div>
           <div className="desc">
             <p className="text">{props.desc}</p>
@@ -22,23 +21,20 @@ export default function Project(props) {
               <li className="itemContainer">
                 <GitHubIcon
                   className="icon"
-                  onClick={() =>
-                    window.open("https://github.com/MrSamLaw/", "_blank")
-                  }
+                  onClick={() => window.open(`${props.github}`, "_blank")}
                 />
               </li>
               <li className="itemContainer">
                 <LinkIcon
                   className="icon"
-                  onClick={() =>
-                    window.open("https://github.com/MrSamLaw/", "_blank")
-                  }
+                  onClick={() => window.open(`${props.deployed}`, "_blank")}
                 />
               </li>
             </ul>
           </div>
           <div className="blur_back"></div>
         </div>
+        if({props.featured}) <div>{props.fText}</div>
       </div>
     </div>
   );

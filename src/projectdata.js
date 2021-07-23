@@ -1,11 +1,13 @@
 import SS01 from "./assets/images/ANZ-Travel-Bubble-Landing.png"
 import SS02 from "./assets/images/AutoMate.png"
-import SS03 from "./assets/images/Tech-Blog.png"
-import SS04 from "./assets/images/WeatherDashboard.png"
-import SS05 from "./assets/images/DayPlanner.png"
-import SS06 from "./assets/images/eCommerce.png"
-import SS07 from "./assets/images/Note-Taker.png"
-import SS08 from "./assets/images/PWGen.png"
+import SS03 from "./assets/images/Olympia.png"
+import SS04 from "./assets/images/JnR108.png"
+import SS05 from "./assets/images/Tech-Blog.png"
+import SS06 from "./assets/images/WeatherDashboard.png"
+import SS07 from "./assets/images/DayPlanner.png"
+import SS08 from "./assets/images/eCommerce.png"
+import SS09 from "./assets/images/Note-Taker.png"
+import SS10 from "./assets/images/PWGen.png"
 
 export const projectData = [
     {
@@ -15,6 +17,7 @@ export const projectData = [
         repo: "https://github.com/MrSamLaw/07-ANZAC-Bubble-Travel-App",
         URL: "https://mrsamlaw.github.io/07-ANZAC-Bubble-Travel-App/",
         screenshot: SS01,
+        featured: false,
     },
     {
         title: "AutoMate",
@@ -23,6 +26,26 @@ export const projectData = [
         repo: "https://github.com/MrSamLaw/AutoMate",
         URL: "https://p2-automate.herokuapp.com/",
         screenshot: SS02,
+        featured: false,
+    },
+    {
+        title: "Olympia",
+        description: "A Fitness Tracker",
+        tech: ["CSS", "JavaScript", "MongoDB", "Node.js", "Express", "Mongoose", "DotEnv", "Heroku"],
+        repo: "https://github.com/MrSamLaw/Olympia",
+        URL: "https://sl-olympia.herokuapp.com/",
+        screenshot: SS03,
+        featured: true,
+        featuredText: "The front end site and seed data was provided. We refactored the front end for user experience, amended the units and added minor validation around adding null data. \nWe built the backend from the MongoDB models, api & html routes to the server connection allowing us to deploy to Heroku, utilising MongoDB Atlas to host our data.",
+    },
+    {
+        title: "JnR108",
+        description: "A Budget Tracker for when you're on the go!",
+        tech: ["CSS", "JavaScript", "MongoDB", "IndexedDB", "Node.js", "Express", "Mongoose", "DotEnv", "Heroku"],
+        repo: "https://github.com/MrSamLaw/JnR108",
+        URL: "https://sl-jnr108.herokuapp.com/",
+        screenshot: SS04,
+        featured: false,
     },
     {
         title: "Talkin' Tech Tech Blog",
@@ -30,7 +53,8 @@ export const projectData = [
         tech: ["Node.js", "Express", "Express Sessions", "Sequelize", "Handlebars", "BCrypt", "DotEnv", "JAWSDB", "Bootstrap"],
         repo: "https://github.com/MrSamLaw/Tech-Blog",
         URL: "https://sl-tech-blog.herokuapp.com/",
-        screenshot: SS03,
+        screenshot: SS05,
+        featured: false,
     },
     {
         title: "Everyweather You Go! - Weather Dashboard",
@@ -38,7 +62,8 @@ export const projectData = [
         tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Moment JS", "API"],
         repo: "https://github.com/MrSamLaw/06-WeatherDashboard",
         URL: "https://mrsamlaw.github.io/06-WeatherDashboard/",
-        screenshot: SS04,
+        screenshot: SS06,
+        featured: false,
     },
     {
         title: "Harder Better Faster Stronger - Work Day Planner",
@@ -46,7 +71,8 @@ export const projectData = [
         tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Moment JS"],
         repo: "https://github.com/MrSamLaw/WorkDayPlanner",
         URL: "https://mrsamlaw.github.io/WorkDayPlanner/",
-        screenshot: SS05,
+        screenshot: SS07,
+        featured: false,
     },
     {
         title: "E-Commerce Backend",
@@ -54,7 +80,8 @@ export const projectData = [
         tech: ["Node.js", "Express", "DotEnv", "Sequelize", "SQL"],
         repo: "https://github.com/MrSamLaw/E-Commerce-Backend",
         URL: "#",
-        screenshot: SS06,
+        screenshot: SS08,
+        featured: false,
     },
     {
         title: "Note-Taker",
@@ -62,7 +89,8 @@ export const projectData = [
         tech: ["Node.js", "Express"],
         repo: "https://github.com/MrSamLaw/Note-Taker",
         URL: "https://desolate-reef-25794.herokuapp.com/",
-        screenshot: SS07,
+        screenshot: SS09,
+        featured: false,
     },
     {
         title: "Password Generator",
@@ -70,7 +98,8 @@ export const projectData = [
         tech: ["HTML", "CSS", "JavaScript"],
         repo: "https://github.com/MrSamLaw/PWGenerator",
         URL: "https://mrsamlaw.github.io/PWGenerator/",
-        screenshot: SS08,
+        screenshot: SS10,
+        featured: false,
     }
 ]
 
