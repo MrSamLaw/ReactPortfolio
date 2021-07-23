@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./contact.scss";
 
 import { validateEmail } from "../../utils/helpers";
+import PageTitle from "../PageTitle/PageTitle";
 
 export default function Contacts() {
   // Create state variables for the fields in the form
@@ -32,14 +33,26 @@ export default function Contacts() {
     e.preventDefault();
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !contactName) {
-      setErrorMessage("Email or username is invalid");
+    if (!validateEmail(email)) {
+      setErrorMessage("Please enter a valid Email");
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (!contactName) {
+      setErrorMessage("Please enter your name");
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (!message) {
+      setErrorMessage("Please enter a message");
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
 
-    alert(`Thanks ${contactName}`);
+    alert(`Thanks ${contactName}\nI'll be in contact soon!`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setContactName("");
@@ -49,6 +62,8 @@ export default function Contacts() {
 
   return (
     <div className="contact">
+      <PageTitle heading="Contact" />
+
       <form className="form">
         <input
           value={contactName}
@@ -64,6 +79,7 @@ export default function Contacts() {
           onChange={handleInputChange}
           type="email"
           placeholder="email"
+          required
         />
 
         <textarea

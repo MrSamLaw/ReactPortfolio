@@ -1,9 +1,10 @@
+import PageTitle from "../PageTitle/PageTitle";
 import "./about.scss";
 
 export default function About() {
   return (
     <div className="about">
-      <h1>About Me</h1>
+      <PageTitle heading="About Me" />
       <h3>Brand Statement</h3>
       <p>
         Full-Stack developer who embraces the line between the creative and the

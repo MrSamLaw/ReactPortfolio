@@ -3,6 +3,7 @@ import profilepic from "../../assets/SamLawProfile.jpg";
 import Button from "../Button/Button";
 import Project from "../Project/Project";
 import { projectData } from "../../projectdata";
+import PageTitle from "../PageTitle/PageTitle";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </section>
 
       <section className="portfolio">
+        <PageTitle heading="Work" />
         <Project />
         <Button buttonText="More of my work" />
       </section>

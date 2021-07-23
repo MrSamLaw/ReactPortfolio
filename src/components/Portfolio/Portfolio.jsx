@@ -1,11 +1,12 @@
 import "./portfolio.scss";
 import Project from "../Project/Project";
 import { projectData } from "../../projectdata";
+import PageTitle from "../PageTitle/PageTitle";
 
 export default function Portfolio() {
   return (
     <div className="portfolio">
-      <h1>Portfolio</h1>
+      <PageTitle heading="Portfolio" />
       <div className="container">
         {projectData.map((item) => (
           <Project
