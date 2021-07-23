@@ -32,6 +32,14 @@ export default function Navigation({ currentPage, handlePageChange }) {
             >
               Portfolio
             </li>
+            {/* <li
+              onClick={() => handlePageChange("Resume")}
+              className={
+                currentPage === "Resume" ? "nav-link active" : "nav-link"
+              }
+            >
+              Resume
+            </li> */}
             <li
               onClick={() => handlePageChange("Contact")}
               className={

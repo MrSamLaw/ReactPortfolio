@@ -33,7 +33,6 @@
         height: 24px;
         margin: 0 10px;
         color: rgba(195, 195, 195, 0.5);
-        cursor: pointer;
       }
     }
     .left {
@@ -44,6 +43,7 @@
       display: flex;
 
       .icon {
+        cursor: pointer;
         &:hover {
           color: $hoverColor;
         }

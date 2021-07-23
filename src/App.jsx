@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation/Navigation";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contacts";
 import Footer from "./components/Footer/Footer";
 
@@ -21,6 +22,9 @@ export default function App() {
     if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
+    // if (currentPage === "Resume") {
+    //   return <Resume />;
+    // }
     return <Contact />;
   };
 

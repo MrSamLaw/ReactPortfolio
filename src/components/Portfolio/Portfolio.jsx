@@ -1,20 +1,22 @@
 import "./portfolio.scss";
 import Project from "../Project/Project";
-
-const projects = [
-  {
-    img: "/assets/SamLawProfile.jpg",
-    title: "Test Title",
-  },
-];
+import { projectData } from "../../projectdata";
 
 export default function Portfolio() {
   return (
     <div className="portfolio">
       <h1>Portfolio</h1>
-      {projects.map((item) => (
-        <Project img={item.img} title={item.title} key={item.key} />
-      ))}
+      <div className="container">
+        {projectData.map((item) => (
+          <Project
+            img={item.screenshot}
+            title={item.title}
+            desc={item.description}
+            tech={item.tech}
+            key={item.key}
+          />
+        ))}
+      </div>
     </div>
   );
 }
