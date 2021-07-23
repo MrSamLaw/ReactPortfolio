@@ -1,5 +1,5 @@
 import "./contact.scss";
-import { Formik, FormikConsumer, useFormik } from "formik";
+import { useFormik } from "formik";
 import PageTitle from "../PageTitle/PageTitle";
 
 export default function ContactFormik() {
