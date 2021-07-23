@@ -14,7 +14,9 @@ export default function App() {
 
   const renderSection = () => {
     if (currentPage === "Home") {
-      return <Home />;
+      return (
+        <Home currentPage={currentPage} handlePageChange={handlePageChange} />
+      );
     }
     if (currentPage === "About") {
       return <About />;
