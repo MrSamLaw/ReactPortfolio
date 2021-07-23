@@ -1,6 +1,6 @@
 # Mr Sam Law - Full Stack Developer React Porfolio
 
-![Starting Screen](assets/images/Portfolio.png)
+![Starting Screen](assets/ReactPortfolio01.png)
 
 ## Deployment
 
@@ -30,4 +30,4 @@ React-PDF package is used to display Resume.
 
 ## Screenshot
 
-![The Professional Portfolio.](./assets/images/ProfessionalPortfolio.png)
+![The Professional Portfolio.](./assets/ReactPortfolio02.png)
