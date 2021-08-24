@@ -1,0 +1,9 @@
+.contact {
+  background-color: lightseagreen;
+  grid-column: center-start/center-end;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 1fr) 1fr;
+}

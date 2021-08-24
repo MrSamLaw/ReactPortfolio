@@ -1,0 +1,19 @@
+.works {
+  background-color: khaki;
+  grid-column: center-start/center-end;
+
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}

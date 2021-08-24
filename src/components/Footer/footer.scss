@@ -1,0 +1,42 @@
+@import "../../global.scss";
+
+.footer {
+  background-color: darkslategray;
+  grid-column: full-start/full-end;
+  padding: 8rem;
+
+  .fnav {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+
+    &__link:link,
+    &__link:visited {
+      font-size: 1.4rem;
+      font-family: $font-primary;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+      background-color: rgba(#fff, 0.05);
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #000;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  text-align: center;
+}
