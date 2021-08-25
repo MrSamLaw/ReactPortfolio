@@ -1,20 +1,31 @@
 {
   "files": {
-    "main.css": "/ReactPortfolio/static/css/main.b6f9b9c3.chunk.css",
-    "main.js": "/ReactPortfolio/static/js/main.0ef7b3ef.chunk.js",
-    "main.js.map": "/ReactPortfolio/static/js/main.0ef7b3ef.chunk.js.map",
+    "main.css": "/ReactPortfolio/static/css/main.e022e4b3.chunk.css",
+    "main.js": "/ReactPortfolio/static/js/main.af954eeb.chunk.js",
+    "main.js.map": "/ReactPortfolio/static/js/main.af954eeb.chunk.js.map",
     "runtime-main.js": "/ReactPortfolio/static/js/runtime-main.37efb7bb.js",
     "runtime-main.js.map": "/ReactPortfolio/static/js/runtime-main.37efb7bb.js.map",
-    "static/js/2.76043951.chunk.js": "/ReactPortfolio/static/js/2.76043951.chunk.js",
-    "static/js/2.76043951.chunk.js.map": "/ReactPortfolio/static/js/2.76043951.chunk.js.map",
+    "static/js/2.88165497.chunk.js": "/ReactPortfolio/static/js/2.88165497.chunk.js",
+    "static/js/2.88165497.chunk.js.map": "/ReactPortfolio/static/js/2.88165497.chunk.js.map",
     "index.html": "/ReactPortfolio/index.html",
-    "static/css/main.b6f9b9c3.chunk.css.map": "/ReactPortfolio/static/css/main.b6f9b9c3.chunk.css.map",
-    "static/js/2.76043951.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.76043951.chunk.js.LICENSE.txt"
+    "static/css/main.e022e4b3.chunk.css.map": "/ReactPortfolio/static/css/main.e022e4b3.chunk.css.map",
+    "static/js/2.88165497.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.88165497.chunk.js.LICENSE.txt",
+    "static/media/ANZ-Travel-Bubble-Landing.46081245.png": "/ReactPortfolio/static/media/ANZ-Travel-Bubble-Landing.46081245.png",
+    "static/media/AutoMate.df065d69.png": "/ReactPortfolio/static/media/AutoMate.df065d69.png",
+    "static/media/DayPlanner.cc676784.png": "/ReactPortfolio/static/media/DayPlanner.cc676784.png",
+    "static/media/JnR108.0a791517.png": "/ReactPortfolio/static/media/JnR108.0a791517.png",
+    "static/media/Note-Taker.26ad0370.png": "/ReactPortfolio/static/media/Note-Taker.26ad0370.png",
+    "static/media/Olympia.5a73c50f.png": "/ReactPortfolio/static/media/Olympia.5a73c50f.png",
+    "static/media/PWGen.8490df81.png": "/ReactPortfolio/static/media/PWGen.8490df81.png",
+    "static/media/SamLaw-Resume.bff464d3.pdf": "/ReactPortfolio/static/media/SamLaw-Resume.bff464d3.pdf",
+    "static/media/Tech-Blog.a40fa97b.png": "/ReactPortfolio/static/media/Tech-Blog.a40fa97b.png",
+    "static/media/WeatherDashboard.23d52ee3.png": "/ReactPortfolio/static/media/WeatherDashboard.23d52ee3.png",
+    "static/media/eCommerce.82edd46c.png": "/ReactPortfolio/static/media/eCommerce.82edd46c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.37efb7bb.js",
-    "static/js/2.76043951.chunk.js",
-    "static/css/main.b6f9b9c3.chunk.css",
-    "static/js/main.0ef7b3ef.chunk.js"
+    "static/js/2.88165497.chunk.js",
+    "static/css/main.e022e4b3.chunk.css",
+    "static/js/main.af954eeb.chunk.js"
   ]
 }
