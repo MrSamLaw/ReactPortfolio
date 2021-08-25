@@ -1,4 +1,22 @@
+@import "../../global.scss";
+
 .intro {
   background-color: ivory;
   grid-column: center-start/center-end;
+
+  padding: 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  &__content {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr repeat(2, min-content) 6rem 1fr;
+    grid-template-columns: max-content;
+    grid-row-gap: 1.5rem;
+  }
+  &__btn {
+    align-self: center;
+    justify-self: start;
+  }
 }

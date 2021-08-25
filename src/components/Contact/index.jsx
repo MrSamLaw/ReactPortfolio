@@ -39,58 +39,50 @@ export default function ContactFormik() {
   return (
     <div className="contact" id="contact">
       <form className="form" onSubmit={formik.handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.name}
-        />
-        {formik.touched.name && formik.errors.name ? (
-          <div className="error">{formik.errors.name}</div>
-        ) : null}
+        <div className="form__left">
+          <label htmlFor="name">Name:</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.name}
+          />
+          {formik.touched.name && formik.errors.name ? (
+            <div className="error">{formik.errors.name}</div>
+          ) : null}
 
-        <label htmlFor="name">Email:</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.email}
-        />
-        {formik.touched.email && formik.errors.email ? (
-          <div className="error">{formik.errors.email}</div>
-        ) : null}
-
-        <label htmlFor="subject">Subject:</label>
-        <input
-          id="subject"
-          name="subject"
-          type="text"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.subject}
-        />
-        {formik.touched.subject && formik.errors.subject ? (
-          <div className="error">{formik.errors.subject}</div>
-        ) : null}
-
-        <label htmlFor="name">Your Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          type="text"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.message}
-        />
-        {formik.touched.message && formik.errors.message ? (
-          <div className="error">{formik.errors.message}</div>
-        ) : null}
-        <button type="submit">Submit</button>
+          <label htmlFor="name">Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
+          />
+          {formik.touched.email && formik.errors.email ? (
+            <div className="error">{formik.errors.email}</div>
+          ) : null}
+        </div>
+        <div className="form__right">
+          <label htmlFor="name">Your Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            type="text"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.message}
+          />
+          {formik.touched.message && formik.errors.message ? (
+            <div className="error">{formik.errors.message}</div>
+          ) : null}
+        </div>
+        <button className="btn form__btn" type="submit">
+          SEND
+        </button>
       </form>
     </div>
   );
