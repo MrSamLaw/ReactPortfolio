@@ -1,42 +1,53 @@
 @import "../../global.scss";
 
 .footer {
-  background-color: darkslategray;
-  grid-column: full-start/full-end;
-  padding: 8rem;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 2%,
+    black 20% 80%,
+    rgba(0, 0, 0, 0) 98%
+  );
 
-  .fnav {
-    list-style: none;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 2rem;
+  .container {
+    width: 80%;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    &__link:link,
-    &__link:visited {
-      font-size: 1.4rem;
-      font-family: $font-primary;
-      color: #fff;
-      text-decoration: none;
-      text-align: center;
-      transition: all 0.2s;
+    .itemContainer {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+        color: rgba(195, 195, 195, 0.5);
+      }
     }
+    .left {
+      display: flex;
+      flex-direction: column;
+    }
+    .right {
+      display: flex;
 
-    &__link:hover,
-    &__link:active {
-      background-color: rgba(#fff, 0.05);
-      transform: translateY(-3px);
+      .icon {
+        cursor: pointer;
+        &:hover {
+          color: $hoverColor;
+        }
+      }
     }
   }
-}
-
-.copyright {
-  font-size: 1.4rem;
-  color: #000;
-  margin-top: 6rem;
-  margin-right: auto;
-  margin-left: auto;
-  width: 70%;
-  text-align: center;
 }

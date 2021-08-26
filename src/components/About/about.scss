@@ -1,4 +1,28 @@
 .about {
-  background-color: red;
-  grid-column: center-start/center-end;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    width: 65%;
+    margin: 10px;
+    font-weight: 300;
+  }
+
+  .skills {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    ul {
+      margin: 10px;
+      padding: 5px;
+      font-weight: 300;
+      li {
+        margin-top: 5px;
+      }
+    }
+  }
 }

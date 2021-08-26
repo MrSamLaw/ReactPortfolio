@@ -1,22 +1,45 @@
-import "./global.scss";
-import Nav from "./components/Nav";
-import Header from "./components/Header";
-import About from "./components/About";
-import Work from "./components/Works";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import "./app.scss";
+
+import { useState } from "react";
+import Navigation from "./components/Navigation/Navigation";
+import About from "./components/About/About";
+import Home from "./components/Home/Home";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
+import ContactFormik from "./components/Contact/ContactFormik";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
+  const [currentPage, setCurrentPage] = useState("Home");
+
+  const renderSection = () => {
+    if (currentPage === "Home") {
+      return (
+        <Home currentPage={currentPage} handlePageChange={handlePageChange} />
+      );
+    }
+    if (currentPage === "About") {
+      return <About />;
+    }
+    if (currentPage === "Portfolio") {
+      return <Portfolio />;
+    }
+    if (currentPage === "Resume") {
+      return <Resume />;
+    }
+    return <ContactFormik />;
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
-    <main className="container">
-      <Nav />
-      <div className="sections">
-        <Header />
-        <About />
-        <Work />
-        <Contact />
-        <Footer />
-      </div>
+    <main className="app">
+      <Navigation
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
+      <div className="sections">{renderSection()}</div>
+      <Footer />
     </main>
   );
 }

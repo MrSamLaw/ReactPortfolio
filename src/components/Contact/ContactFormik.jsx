@@ -1,5 +1,6 @@
 import "./contact.scss";
 import { useFormik } from "formik";
+import PageTitle from "../PageTitle/PageTitle";
 
 export default function ContactFormik() {
   const validate = (values) => {
@@ -27,7 +28,6 @@ export default function ContactFormik() {
     initialValues: {
       name: "",
       email: "",
-      subject: "",
       message: "",
     },
     validate,
@@ -37,7 +37,8 @@ export default function ContactFormik() {
   });
 
   return (
-    <div className="contact" id="contact">
+    <div className="contact">
+      <PageTitle heading="Contact" />
       <form className="form" onSubmit={formik.handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input
@@ -63,19 +64,6 @@ export default function ContactFormik() {
         />
         {formik.touched.email && formik.errors.email ? (
           <div className="error">{formik.errors.email}</div>
-        ) : null}
-
-        <label htmlFor="subject">Subject:</label>
-        <input
-          id="subject"
-          name="subject"
-          type="text"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.subject}
-        />
-        {formik.touched.subject && formik.errors.subject ? (
-          <div className="error">{formik.errors.subject}</div>
         ) : null}
 
         <label htmlFor="name">Your Message:</label>
