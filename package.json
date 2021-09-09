@@ -2,7 +2,7 @@
   "name": "reactportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MrSamLaw.github.io/ReactPortfolio",
+  "homepage": "https://code.mrsamlaw.com/",
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",
     "@material-ui/core": "^4.12.1",
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "echo 'code.mrsamlaw.com' > ./build/CNAME && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
