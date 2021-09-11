@@ -49,4 +49,5 @@ body {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end]minmax(6rem, 1fr) [full-end];
+  grid-column-gap: 1rem;
 }
